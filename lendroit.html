@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'endroit du partage </title>
+    <link rel="stylesheet" href="awesome/css/all.min.css">
+    <link rel="stylesheet" href="lendroit.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html"><span>Journal</span>Intime</a></h1>
+        </div>
+        <!-- menu responsive -->
+        <div class="toggle-menu"></div>
+
+        <ul class="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="lendroit.html">L'endroit du partage</a></li>
+        </ul>
+    </header>
+    <div>
+        <div class="ins">
+            <div class="container">
+                <div class="header">
+                    <h2>Créer un compte</h2>
+                </div>
+                <form class="form" id="form">
+                    <div class="form-control ">
+                        <label for="">Nom d'utilisateur</label>
+                        <input type="text" id="username" placeholder="Louis Delgrès">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation"></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <div class="form-control ">
+                        <label for="">Email</label>
+                        <input type="email" id="email" placeholder="Delgrès@gmail.com">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation"></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Mot de passe</label>
+                        <input type="password" id="password" placeholder="14525414">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation"></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="">Confirmation du mot de passe</label>
+                        <input type="password" id="password2" placeholder="14525414">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation"></i>
+                        <small>Message d'erreur</small>
+                    </div>
+                    <button type="submit"> <i class="fas fa-user-plus"></i> S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="img1">
+            <header>
+                <div>
+                    <div class="qualiopi">
+                        <a href="https://entre4roues.com/#"><img src="logo4roues.webp" height="160px"></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="emploi">
+                        <a href="https://a-a-s-v.org/"><img src="Logo-AASV.png" height="160px"></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-local">
+                        <a href="https://www.lamaisondesfemmes.fr/"><img src="logo-lmdf-stdenis-rvb.png" height="170px"></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="légal">
+            <ul>
+                <a href="mention.html">Mentions légales Politique de confidentialité</a>
+            </ul>
+        </div>
+   </footer>
+    <script>
+        var menu = document.querySelector(".menu");
+        var toggle_menu = document.querySelector(".toggle-menu");
+        toggle_menu.onclick = function(){
+            toggle_menu.classList.toggle('active') ;
+            menu.classList.toggle('responsive') ;
+        }
+    </script>
+    <script src="lendroit.js" async></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice';
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff(218, 0, 0);
+    position: relative;
+}
+span {
+    color: #db7093;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 80PX;
+}
+header .logo {
+    color: #db7093;
+
+}
+header .menu {
+    display: flex;
+    align-items: center;
+}
+header .menu li {
+    margin: 0 15px;
+    list-style: none;
+}
+header .menu li a {
+    color: black;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+header .menu li a:hover {
+    color: #db7093;
+    font-size: 18px;
+    color: black;
+}
+header .menu li a::before {
+    position: absolute;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 5px;
+    border-radius: 6px;
+    transition: 0.5s;
+    background-color: #db7093;
+}
+
+header .menu li a:hover::before {
+    width:100%;
+}
+section {
+    height: calc(100vh - 80px);
+    align-items: center;
+    padding: 0 10%;
+    display: flex;
+}
+.img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#page2>div {
+    background-color: #db7093;;
+    color: black;
+    text-align: center;
+    width: 25%;
+    height: 70px;
+    margin: 90px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: arial;
+    color: black;
+}
+
+#Page2>h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: Arial;
+    text-decoration: none;
+    color: black;
+}
+
+.dev {
+    text-decoration: none;
+    color: black;
+}
+#page3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#page3>div {
+    background-color: #db7093;;
+    color: white;
+    text-align: center;
+    width: 25%;
+    height: 80px;
+    margin: 90px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: arial;
+}
+
+#Page3>h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+#Page3>h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+#Page4>h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+.zone-footer {
+    width: 100%;
+    height: 100%;
+    background-color: #db7093;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.légal {
+    font-size: 40px;
+    text-align: center;
+    transform: translate(0%, 85%);
+}
+.log-part {
+    display: flex;
+    transform: translate(0%,10%);
+}
+.footer{
+	background-color: #db7093;
+    padding: 70px 0;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/*Responsive*/
+
+@media (max-width:904px) {
+    header {
+        padding: 0 5%;
+    }
+    header .menu {
+        display: none;
+    }
+    section {
+        margin-top: 100px;
+    }
+    .toggle-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+    }
+    .section {
+        display: none;
+    }
+
+    .page3>div {
+        background-color: #db7093;;
+        color: white;
+        text-align: center;
+        width: 25%;
+        height: 200px;
+        margin: 90px;
+        border-radius: 10px;
+        font-size: 40px;
+        font-family: arial;
+    }
+
+    .toggle-menu::before{
+        position: absolute;
+        content: "";
+        height: 5px;
+        width: 25px;
+        background-color: #db7093;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 #db7093;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .toggle-menu.active::before{
+        transform: translateY(0) rotate(-45deg);
+        box-shadow: 0 0px 0 #fff;
+    }
+    .toggle-menu::after{
+        position: absolute;
+        content: "";
+        height: 5px;
+        width: 25px;
+        background-color: #db7093;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle-menu.active::after{
+        transform: translateY(0) rotate(45deg);
+        
+    }
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .menu.responsive li {
+        margin: 25px 0;
+    }
+}

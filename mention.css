@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice';
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff(218, 0, 0);
+    position: relative;
+}
+span {
+    color: #db7093;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 80PX;
+}
+header .logo {
+    color: #db7093;
+
+}
+header .menu {
+    display: flex;
+    align-items: center;
+}
+header .menu li {
+    margin: 0 15px;
+    list-style: none;
+}
+header .menu li a {
+    color: black;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+header .menu li a:hover {
+    color: #db7093;
+    font-size: 18px;
+    color: black;
+}
+header .menu li a::before {
+    position: absolute;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 5px;
+    border-radius: 6px;
+    transition: 0.5s;
+    background-color: #db7093;
+}
+
+header .menu li a:hover::before {
+    width:100%;
+}
+
+.title {
+    text-align: center;
+    line-height: 3em;
+}
+
+.container {
+    font-size: 18px;
+}
+
+.art {
+    line-height: 1.5em;
+}
+
+.line {
+    line-height: 1.5em;
+}
+.zone-footer {
+    width: 100%;
+    height: 100%;
+    background-color: #db7093;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.légal {
+    font-size: 40px;
+    text-align: center;
+    transform: translate(0%, 85%);
+}
+.log-part {
+    display: flex;
+    transform: translate(0%,10%);
+}
+.footer{
+	background-color: #db7093;
+    padding: 70px 0;
+}
+
