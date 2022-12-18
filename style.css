@@ -6,13 +6,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Alice';
-    color: rgb(0, 0, 0);
     text-decoration: none;
     box-sizing: border-box;
 }
 body {
-    background-color: #fff(218, 0, 0);
-    position: relative;
+    background-color: #333;
 }
 span {
     color: #db7093;
@@ -24,9 +22,13 @@ header {
     padding: 0 10%;
     height: 80PX;
 }
-header .logo {
-    color: #db7093;
 
+
+header .logo {
+    transform: translate(-30%,40%);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 30px;
 }
 header .menu {
     display: flex;
@@ -37,17 +39,17 @@ header .menu li {
     list-style: none;
 }
 header .menu li a {
-    color: black;
+    color: #db7093;
     text-decoration: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     transition: 0.5s;
 }
 header .menu li a:hover {
     color: #db7093;
     font-size: 18px;
-    color: black;
+    color: #fff;
 }
 header .menu li a::before {
     position: absolute;
@@ -90,18 +92,17 @@ section {
     height: 70px;
     margin: 90px;
     border-radius: 10px;
-    font-size: 30px;
-    font-family: arial;
-    color: black;
+    font-size: 50px;
+    font-family: "Alice";
 }
 
 #Page2>h1 {
     text-align: center;
     margin-top: 15px;
     font-size: 50px;
-    font-family: Arial;
+    font-family: "Alice";
     text-decoration: none;
-    color: black;
+    color: #db7093;
 }
 
 .dev {
@@ -115,21 +116,22 @@ section {
 
 #page3>div {
     background-color: #db7093;;
-    color: white;
+    color: #545454;
     text-align: center;
     width: 25%;
-    height: 80px;
+    height: 130px;
     margin: 90px;
     border-radius: 10px;
-    font-size: 30px;
-    font-family: arial;
+    font-size: 50px;
+    font-family: "Alice";
 }
 
 #Page3>h1 {
     text-align: center;
     margin-top: 15px;
     font-size: 50px;
-    font-family: Arial;
+    font-family: "Alice";
+    color: #db7093;
 }
 
 #Page3>h2 {
@@ -137,6 +139,7 @@ section {
     margin-top: 15px;
     font-size: 50px;
     font-family: Arial;
+    color: #db7093;
 }
 
 #Page4>h1 {
@@ -144,6 +147,7 @@ section {
     margin-top: 15px;
     font-size: 50px;
     font-family: Arial;
+    color: #545454;
 }
 
 .zone-footer {
@@ -161,112 +165,128 @@ section {
 }
 
 .légal {
+    margin: 20px 20px;
     font-size: 40px;
     text-align: center;
     transform: translate(0%, 85%);
+    color: black;
 }
 .log-part {
     display: flex;
     transform: translate(0%,10%);
+    justify-content: space-between;
+    align-items: center;
 }
-.footer{
+
+.footer { 
 	background-color: #db7093;
     padding: 70px 0;
 }
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
 
-/*Responsive*/
-
-@media (max-width:904px) {
-    header {
-        padding: 0 5%;
-    }
-    header .menu {
-        display: none;
-    }
-    section {
-        margin-top: 100px;
-    }
-    .toggle-menu {
-        width: 50px;
-        height: 50px;
+@media (max-width: 951px) {
+    .footer {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        z-index: 1;
+        margin: 20px 20px;
+        height: 100%;
+        width: 100%;
+        transform: translate(-2%, 7%);
         position: relative;
-    }
-    .section {
-        display: none;
+        flex-direction: column;
     }
 
-    .page3>div {
+    .img {
+        height: 100%;
+        width: 100%;
+        margin-top: 150px;
+    }
+
+    #page2>div {
         background-color: #db7093;;
-        color: white;
+        color: black;
         text-align: center;
         width: 25%;
-        height: 200px;
+        height: 60px;
         margin: 90px;
         border-radius: 10px;
         font-size: 40px;
-        font-family: arial;
+        font-family: "Alice";
     }
 
-    .toggle-menu::before{
-        position: absolute;
-        content: "";
-        height: 5px;
-        width: 25px;
-        background-color: #db7093;
-        border-radius: 6px;
-        box-shadow: 0 10px 0 #db7093;
-        transform: translateY(-10px);
+    #page3>div {
+        background-color: #db7093;;
+        text-decoration-color: #545454;
+        text-align: center;
+        width: 50%;
+        height: 90px;
+        margin: 90px;
+        border-radius: 10px;
+        font-size: 40px;
+        font-family: "Alice";
+    }
+
+    header .menu li a {
+        color: #db7093;
+        text-decoration: 0;
+        text-transform: uppercase;
+        font-size: 30px;
+        position: relative;
         transition: 0.5s;
     }
-    .toggle-menu.active::before{
-        transform: translateY(0) rotate(-45deg);
-        box-shadow: 0 0px 0 #fff;
+
+    #Page3>h1 {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 40px;
+        font-family: "Alice";
+        color: #db7093;
     }
-    .toggle-menu::after{
-        position: absolute;
-        content: "";
-        height: 5px;
-        width: 25px;
-        background-color: #db7093;
-        border-radius: 6px;
-        transform: translateY(10px);
+    
+    #Page3>h2 {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 40px;
+        font-family: Arial;
+        color: #db7093;
+    }
+    
+    #Page4>h1 {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 40px;
+        font-family: Arial;
+        color: #545454;
+    }
+
+    #Page2>h1 {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 40px;
+        font-family: "Alice";
+        text-decoration: none;
+        color: #db7093;
+    }
+
+    .légal {
+        margin: 20px 20px;
+        font-size: 40px;
+        text-align: center;
+        transform: translate(0%, 85%);
+        color: black;
+    }
+
+    header .menu li a {
+        color: #fff;
+        text-decoration: 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        position: relative;
         transition: 0.5s;
-    }
-    .toggle-menu.active::after{
-        transform: translateY(0) rotate(45deg);
-        
-    }
-    header .menu.responsive {
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #fff;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    header .menu.responsive li {
-        margin: 25px 0;
-    }
+      }
+  
+      header .menu li a:hover {
+        color: #fff;
+        font-size: 18px;
+        color: #db7093;
+      }
+    
 }
