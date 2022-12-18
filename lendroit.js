@@ -53,7 +53,7 @@ function form_verify() {
         let message ="Le passeword ne peut pas être vide";
         setError(password,message)
     }else if(!password_verify(pwdValue)){
-        let message = "Le mot de passe est trop faible (8 à 12 caractères)";
+        let message =
         setError(password,message)
     }else{
         setSuccess(password);

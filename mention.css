@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
     font-family: 'Alice';
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-decoration: none;
-    box-sizing: border-box;
 }
 body {
-    background-color: #fff(218, 0, 0);
+    background-color:#333;
     position: relative;
 }
 span {
@@ -24,8 +21,7 @@ header {
     height: 80PX;
 }
 header .logo {
-    color: #db7093;
-
+    transform: translate(-300%,20%);
 }
 header .menu {
     display: flex;
@@ -36,17 +32,17 @@ header .menu li {
     list-style: none;
 }
 header .menu li a {
-    color: black;
+    color: #db7093;
     text-decoration: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     transition: 0.5s;
 }
 header .menu li a:hover {
-    color: #db7093;
-    font-size: 18px;
-    color: black;
+  color: #db7093;
+  font-size: 18px;
+  color: #fff;
 }
 header .menu li a::before {
     position: absolute;
@@ -68,7 +64,7 @@ header .menu li a:hover::before {
     line-height: 3em;
 }
 
-.container {
+.text {
     font-size: 18px;
 }
 
@@ -79,7 +75,9 @@ header .menu li a:hover::before {
 .line {
     line-height: 1.5em;
 }
+
 .zone-footer {
+    margin: 20px 20px;
     width: 100%;
     height: 100%;
     background-color: #db7093;
@@ -90,20 +88,156 @@ header .menu li a:hover::before {
 .footer-text {
     text-align: center;
     margin-top: 15px;
-    font-size: 40px;
+    font-size: 10px;
+}
+
+img {
+    transform: translate(300%, 0%);
 }
 
 .légal {
-    font-size: 40px;
+    margin: 20px 20px;
+    font-size: 30px;
     text-align: center;
     transform: translate(0%, 85%);
 }
 .log-part {
     display: flex;
-    transform: translate(0%,10%);
+    transform: translate(0%,50%);
+    align-items: center;
 }
 .footer{
 	background-color: #db7093;
-    padding: 70px 0;
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+
 }
 
+#webapp_cover {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 39px;
+    margin: 0 auto;
+    transform: translateY(-50%) scale(2);
+  }
+  
+  #menu_button {
+    width: 39px;
+    overflow: hidden;
+  }
+  
+  #menu_checkbox {
+    display: none;
+  }
+  
+  #menu_label {
+    position: relative;
+    display: block;
+    height: 29px;
+    cursor: pointer;
+  }
+  
+  #menu_label:before,
+  #menu_label:after,
+  #menu_text_bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+  }
+  
+  #menu_label:before,
+  #menu_label:after {
+    content: "";
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+  }
+  
+  #menu_label:before {
+    top: 0;
+  }
+  
+  #menu_label:after {
+    top: 12px;
+  }
+  
+  #menu_text_bar {
+    top: 24px;
+  }
+  
+  #menu_text_bar:before {
+    content: "MENU";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  #menu_checkbox:checked + #menu_label:before {
+    left: -39px;
+  }
+  
+  #menu_checkbox:checked + #menu_label:after {
+    left: 39px;
+  }
+  
+  #menu_checkbox:checked + #menu_label #menu_text_bar:before {
+    animation: moveUpThenDown 0.8s ease 0.2s forwards,
+      shakeWhileMovingUp 0.8s ease 0.2s forwards,
+      shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  }
+  /*responsive*/
+
+  @media (max-width: 951px) {
+    .footer {
+        display: flex;
+        margin: 15px 15px;
+        height: 150%;
+        width: 100%;
+        transform: translate(-2%, 70%);
+        position: relative;
+        flex-direction: column;
+    }
+
+    .qualiopi {
+      transform: translate(-350%, 0%);
+    }
+
+    .emploi {
+      transform: translate(-350%, 0%);
+    }
+
+    .img-local {
+      transform: translate(-350%, 0%);
+    }
+
+    .légal {
+      text-align: center;
+      color: #333
+    }
+
+    header .menu li a {
+      color: #fff;
+      text-decoration: 0;
+      text-transform: uppercase;
+      font-size: 20px;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    header .menu li a:hover {
+      color: #fff;
+      font-size: 18px;
+      color: #db7093;
+    }
+  
+  }
+  

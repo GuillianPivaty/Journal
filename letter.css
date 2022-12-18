@@ -10,6 +10,9 @@
     background: #333;
   }
   
+  .logo {
+    transform: translate(0%, 35%);
+  }
   span {
     color: black;
     color: #db7093;
@@ -36,17 +39,17 @@ header .menu li {
     list-style: none;
 }
 header .menu li a {
-    color: black;
+    color: #db7093;
     text-decoration: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     transition: 0.5s;
 }
 header .menu li a:hover {
-    color: #db7093;
-    font-size: 18px;
-    color: black;
+  color: #db7093;
+  font-size: 18px;
+  color: #fff;
 }
 header .menu li a::before {
     position: absolute;
@@ -120,6 +123,9 @@ header .menu li a:hover::before {
 }
 
 .légal {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 20px;
     font-size: 40px;
     text-align: center;
     transform: translate(0%, 85%);
@@ -130,7 +136,49 @@ header .menu li a:hover::before {
 }
 .footer{
 	background-color: #db7093;
-    padding: 200px 0;
+    padding: 50px 0;
+    transform: translate(0%, 150%);
+}
+
+@media (max-width: 951px) {
+  .footer {
+    display: flex;
+    margin: 20px 20px;
+    height: 100%;
+    width: 100%;
+    transform: translate(-2%, 60%);
+    position: relative;
+    flex-direction: column;
+}
+
+
+  .légal {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px;
+      font-size: 30px;
+      text-align: center;
+      transform: translate(0%, 85%);
+  }
+
+  header .menu li a {
+    color: #fff;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  header .menu li a:hover {
+    color: #fff;
+    font-size: 18px;
+    color: #db7093;
+  }
+
+  .container {
+    transform: translate(0%, 45%);
+  }
 }
 
 
